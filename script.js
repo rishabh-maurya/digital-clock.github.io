@@ -42,8 +42,8 @@ setInterval(() => {
 
     if(hours >= 12) {
         hours -= 12;
-        hours = isLessThan10(hours);
     }
+    hours = isLessThan10(hours);
 
     showHours.innerText = `${hours} :`;
     showMinutes.innerText = `${minutes} :`;

@@ -22,6 +22,7 @@ body {
     display: flex;
     padding: 20px;
     background-color: #000;
+    border: 10px solid rgb(70, 255, 193);
     border-radius: 50px;
     box-sizing: border-box;
     flex-direction: column;
