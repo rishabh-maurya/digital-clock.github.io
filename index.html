@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- external css file -->
     <link rel="stylesheet" href="styles.css">
     <!-- script -->
@@ -15,8 +19,16 @@
 <body>
     <div class="container">
         <div class="time">
-            <span id="time"></span>
-            <span id="ampm">PM</span>
+            <span id="hours" class="time-box"></span>
+            <span id="minutes" class="time-box"></span>
+            <span id="seconds" class="time-box"></span>
+            <span id="ampm"></span>
+        </div>
+        <div class="date-day">
+            <span id="showDay"></span>
+            <span id="showDate"></span>
+            <span id="showMonth"></span>
+            <span id="showYear"></span>
         </div>
     </div>
 </body>

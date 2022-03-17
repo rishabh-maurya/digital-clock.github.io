@@ -19,23 +19,45 @@ body {
 .container {
     height: 250px;
     width: 650px;
+    display: flex;
     padding: 20px;
     background-color: #000;
     border-radius: 50px;
     box-sizing: border-box;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    row-gap: 30px;
 }
 
 .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-box {
+    height: auto;
+    width: 160px;
     color:rgb(70, 255, 193);
     font-size: 7rem;
     font-family: digital;
     font-weight: 500;
+    /* border: 2px solid red; */
 }
 
 #ampm {
     font-size: 3rem;
+    color:rgb(70, 255, 193);
+    font-family: digital
+}
+
+.date-day {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color:rgb(70, 255, 193);
+}
+
+.date-day span {
+    padding-right: 7px;
 }
