@@ -14,21 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container {
-    height: 250px;
-    width: 650px;
-    display: flex;
-    padding: 20px;
     background-color: #000;
-    border: 10px solid rgb(70, 255, 193);
-    border-radius: 50px;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 30px;
 }
 
 .time {
@@ -62,3 +48,63 @@ body {
 .date-day span {
     padding-right: 7px;
 }
+
+/* laptop and desktop screen */
+@media screen and (min-width: 801px) {
+    .container {
+        height: 250px;
+        width: 650px;
+        display: flex;
+        padding: 20px;
+        background-color: #000;
+        border: 10px solid rgb(70, 255, 193);
+        border-radius: 50px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+
+/* tablet screen */
+@media screen and (max-width: 800px) {
+    .container {
+        height: 250px;
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        background-color: #000;
+        border-radius: 50px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+
+/* phone screen */
+@media screen and (max-width: 600px) and (orientation: portrait){
+    body {
+        height: 100vw;
+        transform: rotate(90deg);
+        background-color: #000;
+    }
+
+    .container {
+        height: 100vw;
+        width: auto;
+        display: flex;
+        padding: 150px;
+        background-color: #000;
+        border-radius: 50px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        margin-left: 53.5vh;
+    }
+}
+
